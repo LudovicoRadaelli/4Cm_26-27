@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/mathjax-config.js"></script>
+  <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+  <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+  <script src="../argomenti.js"></script>
+  <title>Compiti per casa</title>
+</head>
+
+<body>
+  <h1>
+    <span id="nav-prev" class="nav-arrow">◃</span>
+    Scheda <span id="scheda-num">5</span>
+    <span id="nav-next" class="nav-arrow">▹</span>
+  </h1>
+
+  <br>
+
+  <h3 class="yellow">Segno di una funzione</h3>
+  <div class="esempi-container">
+
+    <b>Introduzione</b>
+    <br>
+    <br>
+    Nei quattro paragrafi precedenti è stato illustrato il concetto di dominio di una funzione,
+    ovvero l'insieme di valori per i quali è definita.
+    <br>
+    <br>
+    L'obiettivo di questo paragrafo è imparare a svolgere lo studio del <b>segno</b> di una funzione al variare del
+    valore di \(x\).
+    <br>
+    <br>
+    <div class="grayBorder">
+      Trascinando il punto <span style="color: orangered"></span> nel seguente grafico interattivo è possibile
+      visualizzare
+      i valori assunti dalla funzione al variare della \(x\).
+      <br>
+      <br>
+      <div class="geogebra-container">
+        <div id="geogebrazvTiDYAeSi(1)"></div>
+      </div>
+      <div id="valoriFunzionezvTiDYAeSi1">
+        \[
+        f(\color{blue}{}-8\color{black}{}) = \color{red}{}2
+        \]
+      </div>
+
+      <br>
+      Provate a rispondere a queste tre domande:
+      <br>
+      <br>
+      <ul>
+        <li>
+          Per quali valori di \(x\) la funzione assume segno <b>positivo</b>?
+          <br>
+          Ovvero, per quali \(x\) si ha \(f(x) \boldsymbol{\gt} 0\)?
+        </li>
+        <br>
+        <li>
+          Per quali valori di \(x\) la funzione assume segno <b>negativo</b>?
+          <br>
+          Ovvero, per quali \(x\) si ha \(f(x) \boldsymbol{\lt} 0\)?
+        </li>
+        <br>
+        <li>
+          <nobr>Per quali valori di \(x\) la funzione vale \(\boldsymbol{0}\)?</nobr>
+          <br>
+          Ovvero, per quali \(x\) si ha \(f(x) \boldsymbol{=} 0\)?
+        </li>
+      </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <b>Segno di una funzione al variare di \(\boldsymbol{x}\)</b>
+    <br>
+    <br>
+    <b>Esempio</b>
+    <div class="grayBorder">
+      Consideriamo la funzione
+      \[
+      f(x) = \dfrac{1 -x}{2 +x}
+      \]
+      <u><b>Dominio</b></u>
+      <br>
+      Per individuare il dominio è sufficiente "mettere in sicurezza" l'unica operazione pericolosa che compare
+      nella definizione di \(f\), la frazione.
+      <br>
+      <nobr>Il suo denominatore deve essere diverso da \(0\):</nobr>
+      \[
+      2 + x \neq 0 \,\,\,\Longrightarrow\,\,\, x \neq -2
+      \]
+      Di conseguenza il dominio di \(f\) è
+      \[
+      D = \left(-\infty\,;\,\,-2\right) \cup \left(-2\,;\,\,+\infty\right)
+      \]
+      <br>
+      <u><b>Studio del segno</b></u>
+      <br>
+      Vogliamo determinare per quali valori della \(x\) la funzione
+      <br>
+      <br>
+      <ul>
+        <li>
+          assume segno <b>positivo</b>
+        </li>
+        <li>
+          assume segno <b>negativo</b>
+        </li>
+        <li>
+          vale \(\boldsymbol{0}\)
+        </li>
+      </ul>
+      <br>
+      Iniziamo dalla prima domanda. Chiediamoci perciò per quali valori di \(x\) si ha \(f(x) \gt 0\), ovvero:
+      \[
+      \dfrac{1 -x}{2 +x} \gt 0
+      \]
+      Analizziamo come varia il segno del numeratore al variare della \(x\).
+      \[
+      \begin{align*}
+      1 -x \gt 0 \,\,\,&amp;\Longrightarrow\,\,\, -x \gt -1
+      \\\\
+      &amp;\Longrightarrow x \lt 1
+      \end{align*}
+      \]
+      Analizziamo il segno del denominatore.
+      \[
+      2 + x \gt 0 \,\,\,\Longrightarrow\,\,\, x \gt -2
+      \]
+      Inseriamo le informazioni ottenute nel grafico dei segni:
+      <br>
+      <br>
+      <img src="img/img_5_1.png" style="border: 0;">
+      <br>
+      Da questo grafico leggiamo come varia il segno di \(f\) al variare del valore assunto dalla \(x\).
+      Possiamo quindi rispondere alle tre domande iniziali:
+      <br>
+      <br>
+      <ul>
+        <li>
+          la funzione è <b>positiva</b> se \(x \in \left(-2\,;\,\,1\right)\)
+        </li>
+        <br>
+        <li>
+          la funzione è <b>negativa</b> se \(x \in \left(-\infty\,;\,\,-2\right) \cup \left(1\,;\,\,+\infty\right)\)
+        </li>
+        <br>
+        <li>
+          la funzione vale \(\boldsymbol{0}\) se \(x = 1\)
+        </li>
+      </ul>            
+    </div>
+  </div>
+
+  <script>
+    let ggbAppzvTiDYAeSi1 = new GGBApplet({
+      appletOnLoad(api) {
+        api.registerObjectUpdateListener("B", "stampaValorizvTiDYAeSi1");
+      },
+      "appName": "classic",
+      "id": "ggzvTiDYAeSi1",
+      "scaleContainerClass": "geogebra-container",
+      "showToolBar": false,
+      "showAlgebraInput": false,
+      "showMenuBar": false,
+      "enableShiftDragZoom": false,
+      "filename": "img/ggb_5_1.ggb"
+    },
+      true);
+
+    window.addEventListener("load", function () {
+      ggbAppzvTiDYAeSi1.inject('geogebrazvTiDYAeSi(1)');
+    });
+
+    function stampaValorizvTiDYAeSi1() {
+
+      let x = ggzvTiDYAeSi1.getValue("x(B)");
+      x = Math.floor(x * 100) / 100;
+      let y;
+      ggzvTiDYAeSi1.evalCommand(`a = round(f(${x})*100)/100`);
+      y = ggzvTiDYAeSi1.getValue(`a`);
+      let valoriFunzione = document.getElementById("valoriFunzionezvTiDYAeSi1");
+
+      valoriFunzione.innerHTML =
+        `\\[
+            f(\\color{blue}{}${x}\\color{black}{}) = \\color{red}{}${y}
+        \\]`
+      MathJax.typesetClear([valoriFunzione]);
+      MathJax.typesetPromise([valoriFunzione]).then(() => { });
+
+    }
+  </script>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <h3 class="green">Esercizio</h3>
+  <br>
+  <div>
+    Consideriamo la funzione
+    \[
+    f(x) = \dfrac{\sqrt{2x + 3}}{2x - 1}
+    \]
+    <ol type="A" style="font-weight: bold;">
+      <li>
+        <span style="font-weight: normal;">
+          Individuare il <b>dominio</b> della funzione \(f\).
+          <br>
+          <br>
+          <button id="hintrSHoiMvieT-button" onclick="showHint(`rSHoiMvieT`)">Soluzione</button>
+          <div id="hintrSHoiMvieT" class="hint gray" style="display: none;">
+            <b>Soluzione:</b>
+            <br>
+            Il dominio di \(f\) è l'insieme \(D = \Big[-\dfrac{3}{2}\,,\,\,\dfrac{1}{2}\Big) \cup
+            \Big(\dfrac{1}{2}\,,\,\,+\infty\Big)\)
+          </div>
+        </span>
+      </li>
+      <br>
+      <li>
+        <span style="font-weight: normal;">
+          Studiare il <b>segno</b> della funzione \(f\) al variare del valore di \(x\).
+          <br>
+          <br>
+          <button id="hintEHMZMEFnhx-button" onclick="showHint(`EHMZMEFnhx`)">Soluzione</button>
+          <div id="hintEHMZMEFnhx" class="hint gray" style="display: none;">
+            <b>Soluzione:</b>
+            <br>
+            La funzione assume valori positivi per \(x \in \Big(\dfrac{1}{2}\,,\,\,+\infty\Big)\) e negativi per \(x
+            \in
+            [-3\,,\,\,-2]\)
+          </div>
+        </span>
+      </li>
+    </ol>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="gray">
+    <b>Svoglimento:</b>
+    <br>
+    <iframe style="width: 100%" src="https://www.youtube.com/embed/J11Om4ATCow?si=KC5PYbvdi29z3N-x"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <h3 class="green">Esercizio</h3>
+  <span class="gray" style="font-size: 0.9rem;">(Questo esercizio era nella verifica. Svolgetelo solo se apparteneva alla vostra traccia.)</span>
+  <br>
+  <div>
+    Consideriamo la funzione
+    \[
+    f(x) = \dfrac{x^2 + 4x}{x^2 - 3}
+    \]
+    <ul>
+      <li>
+        Stabilire il <b>dominio</b> della funzione.
+      </li>
+      <br>
+      <li>
+        Successivamente, studiare il <b>segno</b> della funzione al variare del valore della \(x\).
+      </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <button id="hintAAAAAAA(1)-button" onclick="showHint(`AAAAAAA(1)`)">Soluzione</button>
+    <div id="hintAAAAAAA(1)" class="hint gray" style="display: none;">
+      <b class="gray">Soluzione</b>
+      <br>
+      Il <b>dominio</b> della funzione è
+      \[
+      D = (-\infty, -\sqrt{3}) \cup (-\sqrt{3}, \sqrt{3}) \cup (\sqrt{3}, +\infty)
+      \]
+      Per quanto riguarda il <b>segno</b>, la funzione è
+      <br>
+      <br>
+      <ul>
+        <li>
+          <b>positiva</b> se
+          <div class="formula">
+            \[
+            x \in(-\infty, -4) \cup (-\sqrt{3}, 0) \cup (\sqrt{3}, +\infty)
+            \]
+          </div>
+        </li>
+        <br>
+        <li>
+          <b>nulla</b> se \(\,\,x = -4\,\,\) oppure \(\,\,x = 0\)
+        </li>
+        <br>
+        <li>
+          <b>negativa</b> se 
+          \[
+           x \in (-4, -\sqrt{3}) \cup (0, \sqrt{3})
+          \]
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <h3 class="green">Esercizio</h3>
+  <span class="gray" style="font-size: 0.9rem;">(Questo esercizio era nella verifica. Svolgetelo solo se apparteneva alla vostra traccia.)</span>
+  <br>
+  <div>
+    Consideriamo la funzione
+    \[
+    f(x) = \dfrac{x^2 - 1}{x^2 + 3}
+    \]
+    <ul>
+      <li>
+        Stabilire il <b>dominio</b> della funzione.
+      </li>
+      <br>
+      <li>
+        Successivamente, studiare il <b>segno</b> della funzione al variare del valore della \(x\).
+      </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <button id="hintAAAAAAA(2)-button" onclick="showHint(`AAAAAAA(2)`)">Soluzione</button>
+    <div id="hintAAAAAAA(2)" class="hint gray" style="display: none;">
+      <b class="gray">Soluzione</b>
+      <br>
+      Il dominio della funzione è 
+      \[
+      D = (-\infty, +\infty)
+      \]
+      Per quanto riguarda il segno, la funzione è 
+      <br>
+      <br>
+      <ul>
+        <li>
+          <b>positiva</b> se \(x \in (-\infty\,,\,\,-1) \cup (1\,,\,\,\+infty)\)
+        </li>
+        <br>
+        <li>
+          <b>nulla</b> se \(\,\,x = -1\,\,\) oppure \(\,\,x = 1\)
+        </li>
+        <br>
+        <li>
+          <b>negativa</b> se \(x \in (-1\,,\,\,1)\)
+        </li>        
+      </ul>
+    </div>
+  </div>
+
+  <script src="../../js/hintAndSlide.js"></script>
+  <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+  <script src="../../js/motoreQuiz.js"></script>
+  <script src="../../js/motoreQuizVideo.js"></script>
+
+  <br>
+  <br>
+
+
+
+
+</body>
+
+</html>
