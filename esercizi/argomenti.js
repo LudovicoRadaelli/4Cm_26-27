@@ -1,4 +1,5 @@
 window.ARGOMENTI = [
   { cartella: "1ripasso",     titolo: "Ripasso (dominio di una funzione)" },
-  { cartella: "2esponenziali", titolo: "Funzioni esponenziali" }  
+  { cartella: "2esponenziali", titolo: "Funzioni esponenziali" },
+  { cartella: "3logaritmi", titolo: "Funzioni logaritmiche" }    
 ];

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">1</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Definizione di logaritmo</h3><div class="esempi-container">
+
+        <div class="grayBackground">
+            Si definisce <b>logaritmo in base \(\color{blue}{b}\) di \(\color{red}{a}\)</b> e si indica con
+            \(log_{\color{blue}{b}}\color{red}{a}\) quel numero da assegnare
+            come esponente a \(\color{blue}{b}\) per ottenere \(\color{red}{a}\).
+        </div>
+
+        <br>
+
+        Per indicare il logaritmo in base \(\color{blue}{b}\) di \(\color{red}{a}\) useremo il simbolo
+        \[
+        \log_{\color{blue}{b}}\left(\color{red}{a}\color{black}{}\right)
+        \]
+
+        <br>
+
+        <h3 class="gray">Esempi</h3>
+        <div class="grayBorder">
+
+            \[
+            \log_{\color{blue}{2}}\left(\color{red}{8}\color{black}{}\right) = 3
+            \]
+            infatti l'esponente da assegnare a \(\color{blue}{2}\) per ottenere \(\color{red}{8}\) è \(3\):
+            \[
+            \color{blue}{2}\color{black}{^{3} = } \color{red}{\,\,8}
+            \]
+            <hr>
+            \[
+            \log_{\color{blue}{3}}\left(\color{red}{81}\color{black}{}\right) = 4
+            \]
+            infatti l'esponente da assegnare a \(\color{blue}{3}\) per ottenere \(\color{red}{81}\) è \(4\):
+            \[
+            \color{blue}{3}\color{black}{^{4} = } \color{red}{\,\,81}
+            \]
+            <hr>
+            \[
+            \log_{\color{blue}{5}}\left(\color{red}{30}\color{black}{}\right) = 2,1133\dots
+            \]
+            infatti l'esponente da assegnare a \(\color{blue}{5}\) per ottenere \(\color{red}{30}\) è
+            \(2,1133\dots\).
+            <div class="gray">
+                In questo caso non l'abbiamo potuto calcolare a mente, ma abbiamo dovuto usare la calcolatrice. Però il
+                risultato torna: se \(5^2 = 25\) per ottenere \(30\) dovrò incrementare un po' l'esponente
+            </div>
+            <br>
+            <hr>
+            \[
+            \log_{\color{blue}{2}}\left(\color{red}{-8}\color{black}{}\right) = \text{???}
+            \]
+            Ragioniamo: stiamo cercando un esponente che assegnato a \(\color{blue}{2}\) dia come risultato
+            \(\color{red}{-8}\). Ovvero:
+            \[
+            \color{blue}{2}\color{black}{^{\text{???}} = } \color{red}{\,\,-8}
+            \]
+            Problema: qualsiasi esponente assegni a \(\color{blue}{2}\), il risultato della potenza è <b>sempre</b>
+            positivo. Quindi il numero che sto cercando non esiste!
+        </div>
+
+        <br>
+
+        <div class="grayBackground">
+            <div style="text-align: center;margin-bottom: 0.5rem;">⚠️⚠️⚠️⚠️</div>
+            <p>Il logaritmo è definito solo per valori positivi dell'argomento.</p>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Calcolare i seguenti logaritmi attraverso la definizione:
+        \[
+        log_{_{10}}\left(100\right) \qquad log_{_4}\left(64\right) \qquad log_{_\frac{1}{3}}\left(9\right)
+        \]
+        \[
+        log_{_3}\left(3^{^{100}}\right) \qquad log_{_{90}}\left(1\right)\qquad log_{_2}\left(0\right)
+        \]
+        \[
+        2^{^{log_{_2}(53)}}
+        \]
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Calcolare il valore delle seguenti espressioni <b>usando la definizione di logaritmo</b>
+    </div><br><ul>
+        <li>
+            <div>
+                \(
+                log_{_{2}}\,\dfrac{1}{4} + log_{_{5}}\,25 + log_{_{3}}\,\sqrt[5]{3^7}
+                \)
+            </div>
+
+            <br>
+
+            <p class="gray">
+                <b>Soluzione:</b> \(\quad\dfrac{7}{5}\)
+                
+
+                <br>
+
+                </p><p class="gray">
+                    <b>Suggerimento 1:</b>
+                    <br>
+                    Ricordate che le radici le possiamo scrivere come potenze con esponente razionale
+                    \[
+                    \sqrt[\color{blue}{}b]{c^{^{\color{red}{}a}}} = c^{\frac{\color{red}{}a}{\color{blue}{}b}}
+                    \]
+                    
+
+                    <br>
+
+                    </p><p class="gray">
+                        <b>Suggerimento 2:</b>
+                        <br>
+                        <span style="font-size: 0.8rem;"><i><b>(di che colore è il cavallo bianco di
+                                    Napoleone?)</b></i></span>
+                        <br>
+                        Prendiamo il seguente logaritmo, che ha come argomento un numero scritto in forma di potenza:
+                        \[
+                        log_{\color{blue}{}_{3}}\left(\color{red}{}3^{^2}\color{gray}{}\right)
+                        \]
+                        Usiamo la definizione di logarimo per calcolarlo.
+                        <br>
+                        Il \(\,log_{\color{blue}{}_{3}}\left(\color{red}{}3^{^2}\color{gray}{}\right)\,\) è quel
+                        misterioso numero \(\color{rgb(255,0, 255)}{}\boxed{?}\) che dato come esponente alla base
+                        \(\color{blue}{}3\), da come risultato
+                        l'argomento \(\color{red}{}3^{2}\). Ovvero
+                        \[
+                        \color{blue}{}3\color{gray}{}^{\color{rgb(255,0,255)}{}{?}} = \color{red}{}3^{^2}
+                        \]
+                        Beh... il misterioso numero \(\color{rgb(255,0, 255)}{}\boxed{?}\) è proprio l'esponente
+                        dell'argomento!
+                        <br>
+                        <br>
+                        Altri esempi della stessa situazione sono
+                        <br>
+                        <br>
+                        </p><ul class="gray">
+                            <li>
+                                \(
+                                \,log_{\color{blue}{}_{5}}\left(\color{red}{}5^{^7}\color{gray}{}\right)\,
+                                \) che vale \(7\)
+                            </li>
+                            <br>
+                            <li>
+                                \(
+                                \,log_{\color{blue}{}_{10}}\left(\color{red}{}10^{^{82}}\color{gray}{}\right)\,
+                                \) che vale \(82\)
+                            </li>
+                            <br>
+                            <li>
+                                \(
+                                \,log_{\color{blue}{}_{6}}\left(\color{red}{}6^{^{2}}\color{gray}{}\right)\,
+                                \) che vale \(2\)
+                            </li>
+                        </ul>
+                        
+
+
+        </li>
+        <br>
+        <li>
+            <div>
+                \(
+                log_{_{6}}\,\dfrac{36}{\sqrt{6}} + log_{_{8}}\,8 + log_{_{37}}\,1
+                \)
+            </div>
+
+            <br>
+
+            <p class="gray">
+                <b>Soluzione:</b> \(\quad\dfrac{5}{2}\)
+                
+        </p></li>
+        <br>
+        <li>
+            <div>
+                \(
+                6 \cdot log_{_{7}}\,\sqrt[3]{49} -7 \cdot \,3^{^{log_{_{3}}\,7}}
+                \)
+            </div>
+
+            <br>
+
+            <p class="gray">
+                <b>Soluzione:</b> \(\quad 45\)
+                
+        </p></li>
+        <br>
+        <li>
+            <div>
+                \(
+                log_{_{2}}\,\left(-4\right) + log_{_{8}}\,0 + \sqrt[4]{-9}
+                \)
+            </div>
+
+            <br>
+
+            <p class="gray">
+                <b>Soluzione:</b> \(\quad ... ... ... 🤨\)
+                
+        </p></li>
+    </ul>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="yellow">Proprietà dei logaritmi</h3>
+    <div class="esempi-container">
+
+        <div class="grayBackground">
+            \[
+            \log_{b}{\left(a\right)} \color{red}{\,+\,} \color{black}{} \log_{b}{\left(c\right)} =
+            \log_{b}\left(a \color{red}{\,\cdot\,}\color{black}{}c\right)
+            \]
+        </div>
+
+        <br>
+
+        <h3 class="gray">Esempi</h3>
+        <div>
+            \[
+            \color{gray}{\underset{=\,\,2}{\underbrace{\color{black}{\log_{_5}{\left(25\right)}}}}} +
+            \color{gray}{\underset{=\,\,3}{\underbrace{\color{black}{\log_{_5}{\left(125\right)}}}}} =
+            \color{gray}{\underset{= \,\,\log_{_5}{625} \,\,=\,\, 5}{\underbrace{\color{black}{\log_{_5}{\left(25
+            \cdot 125\right)}}}}}
+            \]
+
+            \[
+            log_{_3}(4) + log_{_3}(x) = log_{_3}(4x)
+            \]
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <div class="grayBackground">
+            \[
+            \log_{b}{\left(a\right)} \color{red}{\,-\,} \color{black}{} \log_{b}{\left(c\right)} =
+            \log_{b}\left(\color{red}{\dfrac{\color{black}{a}}{\color{black}{c}}}\color{black}{}\right)
+            \]
+        </div>
+
+        <br>
+
+        <h3 class="gray">Esempi</h3>
+        <div>
+            \[
+            \log_{_3}{\left(72\right)} - \log_{_3}{\left(45\right)} = \log_{_3}{\left(\dfrac{72}{45}\right)}
+            \]
+
+            \[
+            log_{_4}(3) - log_{_4}(x) = log_{_4}\left(\dfrac{3}{x}\right)
+            \]
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="grayBackground">
+            \[
+            \log_{b}\left(a^{\color{red}{c}}\color{black}{}\right) = \color{red}{c} \,\, \color{black}{}
+            \log_{b}\left(a\right)
+            \]
+        </div>
+
+        <br>
+
+        <h3 class="gray">Esempi</h3>
+        <div>
+            \[
+            log_{_5}{\left(3^4\right)} = 4 \,\, log_{_5}{\left(3\right)}
+            \]
+            \[
+            log_{_3}(x^2) = 2\,\,log_{_3}(x)
+            \]
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="grayBackground">
+            \[
+            \log_{b}{\left(a\right)} =
+            \dfrac{\log_{\color{red}{c}}{\left(a\right)}}{\log_{\color{red}{c}}{\left(b\right)}}
+            \]
+        </div>
+
+        <br>
+
+        <h3 class="gray">Esempi</h3>
+        <div>
+            \[
+            log_{_8}{\left(64\right)} = \dfrac{log_{_2}{\left(64\right)}}{log_{_2}{\left(8\right)}}
+            \]
+
+            \[
+            log_{_3}(15) = \dfrac{log_{_{10}}(15)}{log_{_{10}}(3)}
+            \]
+        </div>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
